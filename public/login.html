@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuBo Martial Arts - Iniciar Sesión</title>
+    <!-- Agrega la referencia a Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+    <!-- Agrega tu archivo de estilos personalizados si es necesario -->
+  </head>
+
+  <body>
+    <!-- Barra de navegación transparente -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      style="background-color: transparent"
+    >
+      <a class="navbar-brand" href="/inicio" style="color: white"
+        >DuBo Martial Arts</a
+      >
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/monitores" style="color: white"
+              >Nuestros Monitores</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/inicio#courses" style="color: white"
+              >Cursos</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="login wrap">
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Usuario"
+        style="width: 300px"
+      />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Contraseña"
+        style="width: 300px"
+      />
+      <button
+        type="button"
+        class="btn btn-primary btn-block boton"
+        onclick="login()"
+      >
+        Iniciar Sesión
+      </button>
+    </div>
+
+    <p class="pie">&copy; 2023 Derechos reservados por Eloy Pérez y CampusFp</p>
+
+    <!-- <footer class="bottom-footer bg-dark text-white">
+      <div class="container">
+        <p>&copy; 2023 Derechos reservados por Eloy Pérez y CampusFp</p>
+      </div>
+    </footer> -->
+
+    <script src="js/login.js"></script>
+    <!-- Agrega la referencia a Bootstrap JS y Popper.js al final del cuerpo del documento -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

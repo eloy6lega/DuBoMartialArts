@@ -1,0 +1,74 @@
+{
+  "monitores": [
+    {
+      "nombre": "Pablo Motos",
+      "descripcion": "Pablo es un monitor completo para aprender las mejores llaves de judo, kárate, mohitai, jujitsu... Es un monitor muy comprometido con el alumno",
+      "edad": "58",
+      "dni": "12345678A",
+      "imagen": "https://meninasmadridgallery.com/wp-content/uploads/2022/10/PABLO-MOTOS_MMG-500x500.jpg"
+    },
+    {
+      "nombre": "Amador Rivas",
+      "descripcion": "Amador es un monitor especializado en el género femenino. Su mejor habilidad es el cardio. Muy comprometido con sus alumnos",
+      "edad": "42",
+      "dni": "13254768F",
+      "imagen": "https://cdns-images.dzcdn.net/images/artist/2fd49677a96b54adbf6d5379b4743b86/500x500.jpg"
+    },
+    {
+      "nombre": "Luisma Aida",
+      "descripcion": "Luisma es un monitor especializado en edades altas. Ideal para los ancianos o para adultos con dolores a la hora de la realización de ejercicios",
+      "edad": "49",
+      "dni": "87612345E",
+      "imagen": "https://assets.afcdn.com/album/D20181102/phalbm25667235_w500h500c1.jpg"
+    },
+    {
+      "nombre": "Dwayne Johnson",
+      "descripcion": "Dwayne, más conocido como 'La Roca' es especialista en edades comprendidas entre 15 - 50. Ideal para la disciplina y el entrenamiento duro",
+      "edad": "51",
+      "dni": "63744253L",
+      "imagen": "https://www.femalefirst.co.uk/image-library/square/500/d/dwayne-johnson-2019-photo-credit-usa-today-sipa-usa-pa-images.jpg"
+    },
+    {
+      "nombre": "Mauricio Gómez",
+      "descripcion": "Propietario. Entrenador en todas las artes marciales 4º Dan Cinturón Negro judo 3º Dan Cinturón Negro jiujitsu 1º Dan Cinturón Negro karate Entrenador acreditado de Muay Thai",
+      "edad": "57",
+      "dni": "75633492W",
+      "imagen": "https://www.nucleofamiliar.org/wp-content/uploads/2020/03/Andres-6773_-500x500.jpg"
+    },
+    {
+      "nombre": "Sarah Nova",
+      "descripcion": "Ayudante del entrenador de artes marciales. 5º Dan de kárate",
+      "edad": "33",
+      "dni": "26345223D",
+      "imagen": "https://abc.habitacao.org.br/wp-content/uploads/2017/04/1-e0e7223aeb2f66a659d032fb393d11d7e62e00706b1bef5f9f1a13eaa93d4b4b.png"
+    },
+    {
+      "nombre": "Guy Victory",
+      "descripcion": "Entrenador asistente de artes marciales. 2º Dan Cinturón Negro jiujitsu 1º Dan Cinturón Negro judo",
+      "edad": "25",
+      "dni": "982389923A",
+      "imagen": "https://sevillaworld.com/wp-content/uploads/2019/06/Francisco-Rodriguez-Montero-500x500.jpeg"
+    },
+    {
+      "nombre": "Morris Davis",
+      "descripcion": "Entreador asistente de artes marciale. Entrenador acreditado de Muay Thai 3er Dan Cinturón Negro karate",
+      "edad": "42",
+      "dni": "377455532J",
+      "imagen": "https://www.hobart.es/assets/Images/Contact_person/500x500/Raphael_kirn_1_500x500px.jpg"
+    },
+    {
+      "nombre": "Traci Santiago",
+      "descripcion": "Preparadora física. Licenciatura en Ciencias del Deporte Diplomado en salud y nutrición Especializado en diseñar programas de fuerza y acondicionamiento para atletas de combate",
+      "edad": "40",
+      "dni": "6625349M",
+      "imagen": "https://clinicainfinitydental.com/wp-content/uploads/2019/06/brackets-autoligables-infinity-1-500x500.jpg"
+    },
+    {
+      "nombre": "Harpreet Kaur",
+      "descripcion": "Licenciatura en Fisioterapia Máster en Ciencias del Deporte",
+      "edad": "37",
+      "dni": "57263342B",
+      "imagen": "https://www.hellotime.es/assets/images/comentario/17/foto_5.png"
+    }
+  ]
+}

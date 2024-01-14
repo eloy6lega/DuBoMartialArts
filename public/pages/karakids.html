@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KaraKids - Curso de Kárate para Niños</title>
+    <!-- Agrega la referencia a Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/karakids.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/inicio">DuBo Martial Arts</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Agrega el botón para ver el carrito -->
+          <li class="nav-item">
+            <button class="btn btn-link nav-link" onclick="viewCart()">
+              <img
+                src="../img/cart_white.png"
+                alt="Carrito"
+                width="20"
+                height="20"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <h1 class="titulo">KaraKids - Curso de Kárate para Niños</h1>
+    </header>
+
+    <section id="karakids">
+      <div class="container">
+        <div class="card">
+          <img
+            src="../img/niñoskarate2.jpeg"
+            alt="Karakids"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h2 class="card-title">KaraKids - Kárate para Niños</h2>
+            <p class="card-text">
+              Descubre nuestro emocionante curso de kárate diseñado
+              especialmente para niños. Aprenderán las técnicas fundamentales de
+              autodefensa, mejorarán su disciplina y desarrollarán habilidades
+              físicas y mentales. También crearán vínculos con otros pequeños
+              karatekas y aprenderan a ser mejores personas.
+            </p>
+            <p class="card-text">· Precio: 30€</p>
+            <p class="card-text">· Precio inidvidual</p>
+            <p class="card-text">· Incluye monitor</p>
+            <p class="card-text">· No incluye material extra</p>
+            <button class="btn btn-primary carrito" onclick="addToCartKids()">
+              Añadir al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal de Bootstrap para mostrar el carrito -->
+    <div
+      class="modal fade"
+      id="cartModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="cartModalLabel"
+      aria-hidden="true"
+      style="color: black"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="cartModalContent">
+            <!-- El contenido del carrito se mostrará aquí -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success"
+              id="payButton"
+              data-dismiss="modal"
+            >
+              Pagar
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bottom-footer bg-dark text-white">
+      <div class="container">
+        <p>&copy; 2023 Derechos reservados por Eloy Pérez y CampusFp</p>
+      </div>
+    </footer>
+
+    <script src="../js/karakids.js"></script>
+    <!-- Agrega la referencia a Bootstrap JS y Popper.js al final del cuerpo del documento -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuBo Martial Arts</title>
+    <!-- Agrega la referencia a Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/inicio.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="inicio.html">DuBo Martial Arts</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="color: white">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Log-In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/monitores">Nuestros monitores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#courses">Courses</a>
+          </li>
+          <!-- Agrega el botón para ver el carrito -->
+          <li class="nav-item">
+            <button class="btn btn-link nav-link" onclick="viewCart()">
+              <img
+                src="../img/cart_white.png"
+                alt="Carrito"
+                width="20"
+                height="20"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <h1 class="titulo">DuBo Martial Arts</h1>
+    </header>
+
+    <section id="about">
+      <div class="container aboutus2">
+        <h2 style="font-size: 4 0px; text-decoration: underline">About Us</h2>
+        <div class="contenido">
+          <p>
+            En DuBo Martial Arts, nuestra historia es simple pero llena de
+            pasión por las artes marciales. Nos enorgullece ofrecer un espacio
+            donde la disciplina, el respeto y la superación personal se
+            entrelazan para crear una experiencia única.
+          </p>
+          <p>
+            Nuestro viaje comenzó con un pequeño grupo de entusiastas de las
+            artes marciales que compartían la misma visión: proporcionar un
+            ambiente acogedor donde todos, desde principiantes hasta expertos,
+            pudieran aprender y crecer juntos.
+          </p>
+          <p>
+            Lo que nos hace únicos no son las grandes instalaciones o los
+            títulos ostentosos, sino la autenticidad y el compromiso con
+            nuestros estudiantes. Cada instructor en DuBo Martial Arts está
+            dedicado a compartir su conocimiento y experiencia, guiando a
+            nuestros miembros a través de un viaje de autodescubrimiento y
+            fortaleza física y mental.
+          </p>
+          <p>
+            Creemos en la fuerza de la comunidad y en el impacto positivo que
+            las artes marciales pueden tener en la vida de las personas. Nuestro
+            objetivo es crear un ambiente en el que cada persona se sienta
+            inspirada, respetada y capacitada para alcanzar sus metas
+            personales.
+          </p>
+          <p>
+            Te invitamos a unirte a nosotros en este viaje. No importa tu nivel
+            de habilidad o condición física; en DuBo Martial Arts, todos son
+            bienvenidos a formar parte de nuestra familia de artes marciales.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="img/karakids.jpg"
+                alt="Curso Niños"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  KaraKids, el curso perfecto para que los más pequeños aprendan
+                  a defenderse
+                </p>
+                <a class="btn btn-danger carrito" href="/karakids">Ver más</a>
+                <!-- <button class="btn btn-primary">Ver más</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="img/karaadults.webp"
+                alt="Curso Adultos"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  KaraAdults, el curso para los más experimentados. Tanto para
+                  adultos como para los más sabios
+                </p>
+                <a class="btn btn-danger carrito" href="/karaadults">Ver más</a>
+                <!-- <button >Ver más</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal de Bootstrap para mostrar el carrito -->
+    <div
+      class="modal fade"
+      id="cartModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="cartModalLabel"
+      aria-hidden="true"
+      style="color: black"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="cartModalContent">
+            <!-- El contenido del carrito se mostrará aquí -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success"
+              id="payButton"
+              data-dismiss="modal"
+            >
+              Pagar
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bottom-footer bg-dark text-white">
+      <div class="container">
+        <p>&copy; 2023 Derechos reservados por Eloy Pérez y CampusFp</p>
+      </div>
+    </footer>
+
+    <!-- Agrega la referencia a Bootstrap JS y Popper.js al final del cuerpo del documento -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
